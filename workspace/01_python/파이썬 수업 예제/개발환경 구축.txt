@@ -1,0 +1,25 @@
+[1. 기본 파이썬 환경]
+- https://python.org
+- 메뉴의 Downloads 클릭
+- 원하는 버전을 다운로드 받는다.
+- 설치 시작시 "Add Python x.xx to PATH"
+  를 체크해준다.
+- 설치 완료 후 확인 : cmd 실행 후 
+  python -V
+[1-1. 개발도구 설치]
+1. vscode, pycharm 등등 : 파일이 많이 
+   나오는 프로젝트에 적합
+2. jupyter : 데이터 사이언스 관련 프로젝트
+   에 적합
+
+1-1. VSCode 설치
+- vscode로 검색하여 설치한다.
+- 작업할 폴더를 드래그에서 vscode 안으로
+  넣어준다.
+
+[2. 아나콘다 환경]
+- 파이썬 배포판 : 기본 파이썬에 몇 가지 개발도구, 추가 
+  기능을 포함하여 배포하는 설치 파일들
+- https://anaconda.com
+- products > Indivisual Edtion
+- 원하는 버전을 내려받아 설치한다.
