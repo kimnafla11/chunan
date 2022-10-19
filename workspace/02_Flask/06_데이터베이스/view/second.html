@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>second.html</title>
+    </head>
+    <body>
+        <h1>second.html</h1>
+
+        {% for r1 in row %}
+        <h5>{{r1[0]}}</h5>
+        <h5>textData : {{r1[1]}}</h5>
+        <h5>intData : {{r1[2]}}</h5>
+        <h5>doubleData : {{r1[3]}}</h5>
+        <hr/>
+        {% endfor %}
+    </body>
+</html>

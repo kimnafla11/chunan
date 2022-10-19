@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>index.html</title>
+    </head>
+    <body>
+        <!--
+            render_template에서 지정한 이름을 사용한다.
+        -->
+        <h3>a1:{{data_dic.a1}}</h3>
+        <h3>a2:{{data_dic.a2}}</h3>
+        <h3>a3:{{data_dic2.a3}}</h3>
+        <h3>a4:{{data_dic2.a4}}</h3>
+        <hr/>
+        <!--
+            for
+            html코드를 반복해서 결과에 추가한다.
+        -->
+        {% for value in data_list %}
+        <h3>{{value}}</h3>
+        {% endfor %}
+
+        <!--
+            if
+            조건에 만족하는 부분의 html 코드만 결과에 추가한다
+        -->
+        {% if data_dic.a1 == 30 %}
+        <h3>a1은 30입니다</h3>
+        {% elif data_dic.a1 == 28 %}
+        <h3>a1은 28입니다</h3>
+        {% elif data_dic.a1 == 35 %}
+        <h3>a1은 35입니다</h3>
+        {% else %}
+        <h3>a1은 30도 28도 35도 아님</h3>
+        {% endif %}
+        
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>index.html</title>
+    </head>
+    <body>
+        <!-- 
+            get
+            주소?이름=값&이름=값&이름=값
+        -->
+        <a href="/a1?v1=100&v2=200">get 요청</a>
+
+        <hr/>
+
+        <!--
+            post
+            사용자가 입력한 모든 데이터는 header라는 미공개 영역에 저장돼 서버로 전달된당.
+        -->
+        <form action = "/a2" method = 'post'>
+            <input type = "text" name = "data1"/><br/>
+            <input type = "text" name = "data2"/><br/>
+            <button type = "submit">a2 post</button>
+        </form>
+    </body>
+</html>
