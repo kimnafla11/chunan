@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>예측 결과</h1>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>버섯번호</th>
+                    <th>버섯종류</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for idx, r1 in enumerate(result) %}
+                  <tr>
+                    <td>{{idx + 1}}</td>
+                    <td>{{r1}}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              <a href="/" class="btn btn-primary">이전</a>
+ 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>예측할 파일 업로드</h1>
+            <!-- 파일 업로드 위한 enctype을 설정해야한다-->
+            <form action="/result" method="post" enctype="multipart/form-data">
+                <div class="mb-3 mt-3">
+                  <label for="upload" class="form-label">업로드 파일</label>
+                  <input type="file" class="form-control" name="upload">
+                </div>
+               
+                <button type="submit" class="btn btn-primary">업로드</button>
+              </form>
+        </div>
+    </body>
+</html>
